@@ -1,76 +1,57 @@
-# Metadata Finder
+# Digital-Forensics-Toolkit
 
-A Python-based GUI tool to extract, view, and remove metadata from images. Supports common image formats and provides detailed information such as EXIF data, GPS coordinates, file size, checksum, and more.
-
----
-
-## Installation
-
-1. **Clone the Repository:**
-   Download or clone the repository containing the `metadata_finder.py` script.
-
-2. **Install Required Libraries:**
-   Ensure you have Python 3.x installed on your system. Then, install the required libraries using pip:
-   ```bash
-   pip install pillow exifread
-   ```
-
-   - **Pillow**: For image processing.
-   - **ExifRead**: For reading EXIF metadata.
-
-3. **Run the Program:**
-   Execute the script using Python:
-   ```bash
-   python metadata_finder.py
-   ```
-
----
-
-## Usage
-
-1. **Upload an Image:**
-   - Click the "Upload Image" button to select an image file (supported formats: JPG, JPEG, PNG, GIF, BMP).
-
-2. **Check Metadata:**
-   - Click the "Check Metadata" button to extract and display the metadata of the uploaded image.
-
-3. **Remove Metadata:**
-   - Click the "Remove Metadata" button to strip all metadata from the image and save it as a new file.
-
-4. **Save Metadata:**
-   - Click the "Save Metadata" button to save the extracted metadata in either `.txt` or `.json` format.
-
----
+A comprehensive toolkit for digital forensics professionals and enthusiasts. This tool helps extract, analyze, and manipulate metadata from various file types, detect suspicious patterns, and perform advanced file operations.
 
 ## Features
+- **Metadata Extraction**: Extract detailed metadata from images, documents, audio, video, and other file types.
+- **Batch Processing**: Process multiple files at once to save time.
+- **Export Options**: Save metadata in JSON, CSV, XML, HTML, or plain text formats.
+- **File Preview**: View binary previews and entropy analysis for files.
+- **Suspicious Pattern Detection**: Identify potential threats like hidden scripts, passwords, or email addresses.
+- **File Signature Spoofing**: Modify file headers for testing purposes.
+- **PDF JavaScript Injection**: Inject custom JavaScript into PDFs (educational use only).
+- **Metadata Removal**: Strip metadata from files while preserving their usability.
+- **Comparison Tool**: Compare metadata between two files to identify differences and similarities.
+- **Customizable Themes**: Switch between light and dark themes for better usability.
 
-- Extract detailed metadata such as EXIF data, GPS coordinates, file size, checksum, and more.
-- Remove metadata from images and save them as new files.
-- Save extracted metadata in `.txt` or `.json` format.
-- User-friendly GUI with a dark theme.
-- Real-time progress indicator for metadata extraction and removal processes.
+## Requirements
+- Python 3.x
+- Required Libraries: `tkinter`, `reportlab`, `python-magic`, `hashlib`, `Pillow`, `matplotlib`
+- Operating System: Windows, macOS, or Linux
 
----
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Diogo-Lages/Digital-Forensics-Toolkit.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Digital-Forensics-Toolkit
+   ```
+3. Run the application:
+   ```bash
+   python digital_forensics_toolkit.py
+   ```
 
-## Example Output
+## Usage
+1. Launch the application by running `digital_forensics_toolkit.py`.
+2. Use the intuitive GUI to upload files and select the desired operation:
+   - Extract metadata
+   - Compare files
+   - Remove metadata
+   - Spoof file signatures
+   - Inject JavaScript into PDFs
+3. Export results in your preferred format (JSON, CSV, XML, etc.).
+4. Customize the theme (light/dark mode) via the settings menu.
 
-### Metadata Display:
-```
-Date and Time: 2023:01:01 12:00:00
-Camera Model: Canon EOS R5
-GPS Coordinates: https://www.google.com/maps?q=40.7128,-74.0060
-Checksum: d41d8cd98f00b204e9800998ecf8427e
-File Name: example.jpg
-File Size: 123456 bytes
-File Type: JPEG
-Image Width: 1920
-Image Height: 1080
-Bit Depth: 8
-Color Type: RGB
-Compression: Not Available
-Interlace: Noninterlaced
-```
+## Code Structure
+The project is organized into the following modules:
+- **`AppConfig`**: Handles application configuration and user preferences.
+- **`MetadataExtractor`**: Extracts and processes metadata from files.
+- **`FileProcessor`**: Performs batch processing and file operations.
+- **`PDFInjector`**: Injects JavaScript into PDFs for testing purposes.
+- **`SignatureSpoof`**: Modifies file headers to test forensic tools.
+- **`UIComponents`**: Implements the graphical user interface using `tkinter`.
 
 ## License
-
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
