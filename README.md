@@ -1,6 +1,6 @@
 # Digital-Forensics-Toolkit
 
-A comprehensive toolkit for digital forensics professionals and enthusiasts. This tool helps extract, analyze, and manipulate metadata from various file types, detect suspicious patterns, and perform advanced file operations.
+Toolkit for digital forensics. This tool helps extract, analyze, and manipulate metadata from various file types, detect suspicious patterns, and perform advanced file operations.
 
 ## Features
 - **Metadata Extraction**: Extract detailed metadata from images, documents, audio, video, and other file types.
